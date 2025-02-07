@@ -1,0 +1,57 @@
+/* Footer.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.my-5{}
+
+.text-uppercase {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.link-hover {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link-hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffeb3b;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.link-hover:hover {
+  transform: scale(1.1);
+  color: #ffeb3b;
+}
+
+.link-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.social-icon-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon-hover:hover {
+  transform: scale(1.2);
+  color: #ffeb3b;
+}
